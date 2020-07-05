@@ -4,7 +4,7 @@ import { InfoController } from '../controllers/info.controller.ts';
 const infoRouter: Router = new Router();
 
 infoRouter
-  .post('/api/info', InfoController.create)
   .get('/api/info', InfoController.getAll)
+  .post('/api/info', InfoController.create);
 
 export { infoRouter };

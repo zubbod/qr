@@ -1,6 +1,6 @@
 FROM hayd/deno:latest
 
-EXPOSE 443
+EXPOSE 4200
 
 WORKDIR /app
 

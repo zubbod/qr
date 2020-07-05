@@ -5,6 +5,6 @@ const infoRouter: Router = new Router();
 
 infoRouter
   .get('/api/info', InfoController.getAll)
-  .post('/api/info/create', InfoController.create)
+  .post('/api/create', InfoController.create)
 
 export { infoRouter };

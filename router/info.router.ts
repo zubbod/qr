@@ -1,10 +1,10 @@
 import { Router } from "../core/dependencies.ts";
-import { InfoController } from '../controllers/info.controller.ts';
+import { getAll, create } from '../controllers/info.controller.ts';
 
 const infoRouter: Router = new Router();
 
 infoRouter
-  .get('/api/info', InfoController.getAll)
-  .post('/api/info', InfoController.create);
+  .get('/api/info', getAll)
+  .post('/api/info', create);
 
 export { infoRouter };

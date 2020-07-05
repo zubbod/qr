@@ -4,6 +4,6 @@ import { AuthController } from '../controllers/auth.controller.ts';
 const authRouter = new Router();
 
 authRouter
-.post('/api/auth', AuthController.login)
+  .post('/api/auth', AuthController.login)
 
 export { authRouter }

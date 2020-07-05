@@ -1,4 +1,4 @@
-FROM hayd/alpine-deno:latest
+FROM hayd/deno:latest
 
 EXPOSE 4200
 
@@ -8,4 +8,4 @@ ADD . /app
 
 RUN deno cache server.ts
 
-CMD [ "run", "--unstable", "--allow-net", "--allow-env", "--allow-read", "app.ts" ]
+CMD ["run", "--allow-net", "--allow-read", "--allow-write", "--allow-env", "server.ts"]

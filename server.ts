@@ -20,8 +20,8 @@ const port = parseInt(DEV_PORT);
 
 console.log(`server starting on port ${DEV_PORT}`);
 
-app.use(authRouter.routes());
-app.use(auth);
+// app.use(authRouter.routes());
+// app.use(auth);
 app.use(infoRouter.routes());
 app.use(userRouter.routes());
 

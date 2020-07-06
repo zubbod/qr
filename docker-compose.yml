@@ -2,6 +2,7 @@ version: '3'
 
 services:
   web:
+    restart: always
     build: .
     container_name: qr
     ports:

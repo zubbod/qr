@@ -1,4 +1,4 @@
-import { Context, Status } from "../core/dependencies.ts";
+import { Context, Status } from "../core/deps.ts";
 import { IInfo } from "../interfaces/info.interface.ts";
 import { infodb } from "../db/info.db.ts";
 import { InfoDto } from "../models/info.dto.ts";

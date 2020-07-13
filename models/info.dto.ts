@@ -1,5 +1,5 @@
 import { IInfo } from './../interfaces/info.interface.ts';
-import { v4 } from '../core/dependencies.ts';
+import { v4 } from '../core/deps.ts';
 
 export class InfoDto implements IInfo {
 

@@ -4,7 +4,7 @@ export const users: User[] = [
   {
     name: 'Bogdan',
     password: '1902',
-    id: '1'
+    userId: '1'
   },
 
 ];

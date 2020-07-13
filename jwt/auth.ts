@@ -1,4 +1,4 @@
-import { Context, Status, validateJwt } from '../core/dependencies.ts';
+import { Context, Status, validateJwt } from '../core/deps.ts';
 import { key } from './key.ts';
 
 const auth = async (ctx: Context, next: any) => {

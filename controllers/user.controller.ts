@@ -1,11 +1,14 @@
-import { Context, Status } from '../core/dependencies.ts'
-import { users } from './../db/db.ts';
+import { Context, Status } from '../core/deps.ts'
+import { Users } from '../db/users.db.ts';
 
 export class UserController {
-  static getAll = (ctx: Context) => {
+  static getAll = async (ctx: Context) => {
+    const users = await Users.all()
     ctx.response.status = Status.OK;
     ctx.response.body = { users }
   }
 
-  static createUser = () => {}
+  static createUser = async (ctx: Context) => {
+    const { value } = await ctx.request.body();
+  }
 }

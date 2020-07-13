@@ -1,6 +1,6 @@
 import { users } from './../db/db.ts';
 import { key } from './../jwt/key.ts';
-import { Context, Payload, Jose, Status, setExpiration, makeJwt } from "../core/dependencies.ts";
+import { Context, Payload, Jose, Status, setExpiration, makeJwt } from "../core/deps.ts";
 
 export class AuthController {
 

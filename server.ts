@@ -1,4 +1,4 @@
-import { Application, ListenOptionsTls, config } from './core/dependencies.ts';
+import { Application, ListenOptionsTls, config } from './core/deps.ts';
 import { userRouter } from "./router/user.router.ts";
 import { infoRouter } from './router/info.router.ts';
 import { auth } from './jwt/auth.ts';

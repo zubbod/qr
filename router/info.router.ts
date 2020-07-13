@@ -1,4 +1,4 @@
-import { Router } from "../core/dependencies.ts";
+import { Router } from "../core/deps.ts";
 import { getAll, create } from '../controllers/info.controller.ts';
 
 const infoRouter: Router = new Router();

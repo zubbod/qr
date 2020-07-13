@@ -10,3 +10,6 @@ export { makeJwt, setExpiration, Jose, Payload } from "https://deno.land/x/djwt/
 
 // environment
 export { config } from "https://deno.land/x/dotenv/mod.ts";
+
+// db
+export { DataTypes, Database, Model } from 'https://deno.land/x/denodb/mod.ts';

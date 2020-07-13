@@ -1,4 +1,4 @@
-import { Router } from '../core/dependencies.ts';
+import { Router } from '../core/deps.ts';
 import { AuthController } from '../controllers/auth.controller.ts';
 
 const authRouter = new Router();
